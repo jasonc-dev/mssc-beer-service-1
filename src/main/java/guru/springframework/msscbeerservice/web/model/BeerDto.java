@@ -32,7 +32,7 @@ public class BeerDto {
     private OffsetDateTime lastModifiedDate;
 
     @NotBlank private String beerName;
-    @NotNull private beerStyleEnum beerStyle;
+    @NotNull private BeerStyleEnum beerStyle;
     @NotNull private String upc;
     @JsonFormat(shape=Shape.STRING) @NotNull @Positive private BigDecimal price;
     private Integer quantityOnHand;
